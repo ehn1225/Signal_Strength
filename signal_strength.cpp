@@ -1,10 +1,7 @@
-//20230106 Best of the Best 11th 이예찬
+//20230206 Best of the Best 11th 이예찬
 #include <pcap.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <string.h>
-#include <iostream>
-#include <string.h>
 #include "mac.h"
 #include <map>
 
@@ -143,6 +140,7 @@ int main(int argc, char* argv[]) {
 
 		//화면 출력
 		printf("PWR : %d\r", radiotap_ch->antenna_signal);
+		fflush(stdout);
 	}
 
 	pcap_close(pcap);
